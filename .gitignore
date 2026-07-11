@@ -1,0 +1,37 @@
+# Start from a safe public-repository default: ignore everything except the
+# tutorial files listed below. This avoids accidentally publishing unrelated
+# experiments, datasets, credentials, or local tooling from this workspace.
+/*
+!/.gitignore
+!/README.md
+
+!/pandas_tutorial/
+/pandas_tutorial/*
+!/pandas_tutorial/pandas_functions_mastery_guide.ipynb
+!/pandas_tutorial/data_test.csv
+
+!/matplotlib/
+/matplotlib/*
+!/matplotlib/plt_tutorial.ipynb
+
+!/scipy_tutorial/
+/scipy_tutorial/*
+!/scipy_tutorial/scipy_quantitative_finance_mastery_guide.ipynb
+
+!/sklearn_tutorial/
+/sklearn_tutorial/*
+!/sklearn_tutorial/sklearn_financial_machine_learning_mastery_guide.ipynb
+
+!/pytorch_tutorial/
+/pytorch_tutorial/*
+!/pytorch_tutorial/pytorch_deep_neural_networks_mastery_guide.ipynb
+
+# Notebook and Python-generated local files
+**/.ipynb_checkpoints/
+**/__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+venv/
+.env
+*.env
